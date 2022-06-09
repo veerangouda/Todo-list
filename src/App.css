@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(2, 2, 36);
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .App-logo {
@@ -35,4 +44,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h2{
+  color: white;
+  font-family: serif;
+}
+.input{
+  width: 650px;
+  height: 30px;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+button{
+  background-color:#0437c4;
+  padding:  8px 20px ;
+  color: white;
+  border-radius: 6px;
+  margin: 0 5px;
+}
+button:hover{
+  background-color: #04206c;
+}
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+li{
+  list-style: none;
+  background-color: green;
+  color:white;
+  font-weight: 700;
+  border: 2px solid black;
+  width: 500px;
+  height: 30px;
+  margin:  10px ;
+  border-radius: 5px;
+}
+.output{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deleteitem{
+  color: rgb(252, 24, 24);
+}
+.deleteitem:hover{
+  color: rgb(123, 5, 5);
+}
+.cleardata{
+  position: absolute;
+  right: 100px;
+  top: 100px;
 }

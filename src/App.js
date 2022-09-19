@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -25,7 +24,7 @@ function App() {
     localStorage.setItem("Todo", JSON.stringify(todo));
   }, [todo]);
 
-  // on submitting Add button, todo items diplays down
+  // on submitting Add button, todo items wiil be diplayed
   const handleSubmit = () => {
     if (val === "") {
       return [];
@@ -53,18 +52,18 @@ function App() {
       <div className="cleardata">
         <button onClick={RemoveAll}> Remove All </button>
       </div>
-      <h2>TailNode To-Do List </h2>
+      <h2> To-Do List </h2>
       <div className="">
         <input
           className="input"
           type="text"
-          placeholder="Enter Text..."
+          placeholder="Enter Text....."
           value={val}
           onChange={(e) => setVal(e.target.value)}
         />
         <span>
           <button className="button" onClick={handleSubmit}>
-            Return
+            Go
           </button>
         </span>
       </div>
